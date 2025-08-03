@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Robot Arm Control Panel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Robot Arm Control Panel</h1>
+
+    <div id="runningInfo" style="margin-bottom: 20px; color: #6d478c; font-weight: bold;"></div>
+    
+    <div class="slider-container">
+      <label for="motor1">Motor 1</label>
+      <input type="range" id="motor1" min="0" max="180" value="90" />
+
+      <label for="motor2">Motor 2</label>
+      <input type="range" id="motor2" min="0" max="180" value="90" />
+
+      <label for="motor3">Motor 3</label>
+      <input type="range" id="motor3" min="0" max="180" value="90" />
+
+      <label for="motor4">Motor 4</label>
+      <input type="range" id="motor4" min="0" max="180" value="90" />
+    </div>
+
+    <div class="button-container">
+      <button id="resetBtn">🔁 Reset</button>
+      <button id="saveBtn">💾 Save Pose</button>
+      <button id="runBtn">▶️ Run</button>
+    </div>
+
+    <div class="saved-poses" id="savedPoses">
+      <h3>Saved Poses:</h3>
+      <!-- سيتم إدراج الوضعيات هنا -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
